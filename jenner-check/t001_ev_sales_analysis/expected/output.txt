@@ -1,0 +1,56 @@
+
+  Obs   region    category  parameter  mode  powertrain      unit   percentage  year  value
+-----  -------  ----------  ---------  ----  ----------  --------  -----------  ----  -----
+    1  China    Historical  EV sales   Cars  BEV         Vehicles  110000,00%   2010   1100
+    2  Germany  Historical  EV sales   Cars  BEV         Vehicles  14000,00%    2010    140
+    3  Norway   Historical  EV sales   Cars  BEV         Vehicles  36000,00%    2010    360
+    4  China    Historical  EV sales   Cars  BEV         Vehicles  480000,00%   2011   4800
+    5  Germany  Historical  EV sales   Cars  BEV         Vehicles  140000,00%   2011   1400
+    6  Norway   Historical  EV sales   Cars  BEV         Vehicles  200000,00%   2011   2000
+    7  China    Historical  EV sales   Cars  BEV         Vehicles  960000,00%   2012   9600
+    8  Germany  Historical  EV sales   Cars  BEV         Vehicles  220000,00%   2012   2200
+    9  Norway   Historical  EV sales   Cars  BEV         Vehicles  390000,00%   2012   3900
+   10  China    Historical  EV sales   Cars  BEV         Vehicles  1500000,00%  2013  15000
+
+... 32 more observations (showing 10 of 42)
+
+
+PROC CONTENTS
+-------------------------------------------------------------------------------
+
+Data Set Name: ev_sales
+Observations:  42
+Variables:     9
+
+Variables (in alphabetical order):
+
+  #  Variable    Type    Len  Format  Label
+---  ----------  ----  -----  ------  -----
+  1  category    Char     20          
+  2  mode        Char     10          
+  3  parameter   Char     20          
+  4  percentage  Char     24          
+  5  powertrain  Char      6          
+  6  region      Char     20          
+  7  unit        Char     12          
+  8  value        Num      8          
+  9  year         Num      8          
+
+-------------------------------------------------------------------------------
+
+                                                  The MEANS Procedure
+
+ Variable        N               Mean             Std Dev          Minimum             Maximum
+ ---------------------------------------------------------------------------------------------
+ year           42       2016.5000000           4.0799928     2010.0000000        2023.0000000
+ value          42     437730.9523810     1115340.1492420      140.0000000     5400000.0000000
+ ---------------------------------------------------------------------------------------------
+
+                                                  The MEANS Procedure
+
+ Variable   N Miss
+ -----------------
+ year            0
+ value           0
+ -----------------
+
