@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_ev_sales_analysis",
+  "source_file": "analyze.sas",
+  "source_blob_sha": "9e65f0083016c3e04fa6114522811fa4b7f4f4e2",
+  "source_commit": "7582a644bfa20077f839be3f71f586ed42abfd9e",
+  "notes": "analyze.sas imports ev_sales.csv via PROC IMPORT from a hardcoded SAS OnDemand path, then runs PROC PRINT/CONTENTS/MEANS/MEANS NMISS/SGPLOT. For a self-contained run the PROC IMPORT is replaced by a DATA step building ev_sales (identical 9 column names) from a faithful 42-row sample of the repo's own EV sales data (China/Germany/Norway, 2010-2023); the author's analysis PROCs run unchanged. Deterministic across two POSTs."
+}
